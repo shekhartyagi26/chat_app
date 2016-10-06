@@ -1,0 +1,20 @@
+{
+    "name": "message",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+    },
+    "validations": [],
+    "relations": {
+        "message_owner": {
+            "type":"belongsTo",
+            "model":"user",
+            "foreignKey":"message_owner"
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

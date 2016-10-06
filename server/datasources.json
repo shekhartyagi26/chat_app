@@ -1,0 +1,32 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "mongo_db_app_chatt": {
+        "host": "127.0.0.1",
+        "port": 27017,
+        "database": "app_chatt",
+        "name": "mongo_db_app_chatt",
+        "connector": "mongodb"
+    },
+    "email_data_source": {
+        "name": "email_data_source",
+        "connector": "mail",
+        "transports": [
+            {
+                "type": "smtp",
+                "host": "smtp.mandrillapp.com",
+                "secure": true,
+                "port": 465,
+                "tls": {
+                    "rejectUnauthorized": false
+                },
+                "auth": {
+                    "user": "manish@excellencetechnologies.in",
+                    "pass": "Ca4nS3QStEcpvZdk9iMh0Q"
+                }
+            }
+        ]
+    }
+}
